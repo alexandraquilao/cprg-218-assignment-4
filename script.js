@@ -1,8 +1,8 @@
 function getJoke(category = "Any") {
-    const url = `https://v2.jokeapi.dev/joke/Category?safe-mode`;
+    const url = `https://v2.jokeapi.dev/joke/${category}?safe-mode`;
 
     fetch(url)
-    .then(response => Response.json())
+    .then(response => response.json())
     .then(data => {
         const jokeText = document.getElementById("joke");
         const title = document.getElementById("title");
@@ -11,7 +11,7 @@ function getJoke(category = "Any") {
             jokeText.textContent = data.joke;
         }
         else if(data.type === "twopart") {
-            jokeText.textContent = data `{data.setup} ... {data.delivery}`;
+            jokeText.textContent = `${data.setup} ... ${data.delivery}`;
         }
 
         if(category === "Any") {
@@ -35,4 +35,4 @@ function getJoke(category = "Any") {
 
 window.onload = () => {
     getJoke();
-}
+};

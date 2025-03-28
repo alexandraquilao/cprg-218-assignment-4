@@ -16,7 +16,7 @@ function getJoke(category = "Any") {
 
         if(category === "Any") {
 
-            title.textContent = "Joke of the Day!";
+            title.textContent = "😂Joke of the Day!🤡";
         } 
         else if(category === "Pun") {
             title.textContent = "A Random Pun";

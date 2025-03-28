@@ -1,0 +1,33 @@
+*{
+    background-color: #59788E;
+}
+h1{
+    text-align: center;
+    padding: 50px;
+    color: #ffa02c;
+    font-size: 3em;
+}
+#joke {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1.5em;
+    color: #f4e2d0;
+    border: 2px solid #f4e2d0;
+    background-color: #2f5c33;
+    padding: 20px;
+}
+button{
+    margin: 5px;
+    padding: 20px auto;
+    font-size: 1em;
+    background-color: #ffa02c;
+    padding: 10px 
+}
+
+body{
+    text-align: center;
+}
+
+p{
+    color: #f4e2d0;
+}
